@@ -19,7 +19,3 @@ function findRelativeRanks(score) {
     // 원래 점수 배열을 순회하면서 순위 배열을 생성
     return score.map(s => rankMap.get(s));
 }
-
-// 테스트 케이스
-console.log(findRelativeRanks([5,4,3,2,1])); // ["금메달", "은메달", "동메달", "4", "5"]
-console.log(findRelativeRanks([10,3,8,9,4])); // ["금메달","5","동메달","은메달","4"]
